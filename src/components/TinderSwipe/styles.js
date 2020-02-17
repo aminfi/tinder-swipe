@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import { Image as ReactNativeImage, Text, View } from 'react-native';
+import Animated from 'react-native-reanimated';
 
 const Wrapper = styled(View)`
   height: 100%;
@@ -51,7 +52,7 @@ const Name = styled(Text)`
   color: white;
   font-size: 32px;
 `;
-const Like = styled(View)`
+const Like = styled(Animated.View)`
   border-radius: 5px;
   border: 4px solid ${({ theme }) => theme.palette.green};
   padding: ${({ theme }) => theme.spacing}px;
@@ -61,7 +62,7 @@ const LikeLabel = styled(Text)`
   font-size: ${({ theme }) => theme.typography.textLarge.fontSize};
   font-weight: bold;
 `;
-const Nope = styled(View)`
+const Nope = styled(Animated.View)`
   border-radius: 5px;
   border: 4px solid ${({ theme }) => theme.palette.red};
   padding: ${({ theme }) => theme.spacing}px;

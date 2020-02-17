@@ -12,16 +12,16 @@ import {
   Overlay,
 } from './styles';
 
-const Profile = ({ profile }) => {
+const Profile = ({ profile, likeOpacity = 0, nopeOpacity = 0 }) => {
   return (
     <View style={StyleSheet.absoluteFill}>
       <Image source={profile.profile} />
       <Overlay>
         <CardHeader>
-          <Like>
+          <Like style={{ opacity: likeOpacity }}>
             <LikeLabel>LIKE</LikeLabel>
           </Like>
-          <Nope>
+          <Nope style={{ opacity: nopeOpacity }}>
             <NopeLabel>NOPE</NopeLabel>
           </Nope>
         </CardHeader>
