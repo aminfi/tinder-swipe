@@ -3,10 +3,11 @@ import { Text, View } from 'react-native';
 
 const Wrapper = styled(View)`
   background-color: ${({ theme }) => theme.palette.primary};
+  padding-top: ${({ theme }) => theme.spacing * 4}px;
+  padding-bottom: ${({ theme }) => theme.spacing * 2}px;
 `;
 const Title = styled(Text)`
-  font-size: ${({ theme }) => theme.typography.title.fontSize};
-  padding: ${({ theme }) => theme.spacing * 2}px;
+  ${({ theme }) => ({ ...theme.typography.title })};
   color: white;
   margin: auto;
 `;

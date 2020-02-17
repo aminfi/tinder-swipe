@@ -8,8 +8,8 @@ import theme from './src/theme';
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={{ backgroundColor: theme.palette.primary }}>
+      <StatusBar barStyle="light-content" />
+      <SafeAreaView style={{ flex: 1, backgroundColor: theme.palette.primary }}>
         <TinderSwipe />
       </SafeAreaView>
     </ThemeProvider>

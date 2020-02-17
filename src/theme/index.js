@@ -7,10 +7,16 @@ const Theme = {
     backgroundPrimary: '#d5e5ff',
     background: '#f2f2f2',
     border: '#f2f2f2',
+    red: '#ec5288',
+    green: '#6ee3b4',
   },
   typography: {
+    textLarge: {
+      fontSize: '32px',
+    },
     title: {
       fontSize: '16px',
+      fontWeight: 'bold',
     },
   },
 };
